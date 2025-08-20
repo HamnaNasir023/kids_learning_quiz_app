@@ -12,6 +12,8 @@ class CorrectAnswerProvider extends ChangeNotifier {
   int get currentIndex => _currentIndex;
   int get score => _score;
   int? get selectedAnswerIndex => _selectedAnswerIndex;
+
+
   Questions? get currentQuestion {
     if (_filteredQuestions.isEmpty) {
       return null;
@@ -19,13 +21,10 @@ class CorrectAnswerProvider extends ChangeNotifier {
     if (_currentIndex < _filteredQuestions.length) {
       return _filteredQuestions[_currentIndex];
     } else {
-      // return a dummy question or handle gracefully
       return _filteredQuestions.last;
     }
   }
  
-
-
   int get totalQuestions => _filteredQuestions.length;
 
   bool isAnswered = false;
@@ -56,7 +55,6 @@ class CorrectAnswerProvider extends ChangeNotifier {
       notifyListeners();
     }
   }
-
 
   bool isLastQuestion() {
     return _currentIndex >= _filteredQuestions.length - 1;

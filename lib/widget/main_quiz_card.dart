@@ -14,7 +14,7 @@ class MainQuizCard extends StatelessWidget {
   Widget build(BuildContext context) {
     return Center(
       child: Card.outlined(
-        color:  const Color.fromARGB(255, 202, 230, 245),
+        color: const Color.fromARGB(255, 202, 230, 245),
         borderOnForeground: true,
         child: Center(
           child: ListTile(

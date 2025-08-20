@@ -25,7 +25,6 @@ class _MyQuizMainScreenState extends State<QuizMainScreen> {
       appBar: AppBar(
         centerTitle: true,
         backgroundColor: const Color.fromARGB(255, 202, 230, 245),
-        //  backgroundColor: const Color.fromARGB(255, 177, 200, 211),
         title: const Text(
           "KIDS QUIZ APP",
           style: TextStyle(
